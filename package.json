@@ -10,10 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "three": "https://pkg.threepipe.org/dep/three/-/v0.163.10003/package.tgz",
+    "three": "file:vendor/three-0.163.10003.tgz",
     "threepipe": "^0.5.1"
   },
   "devDependencies": {
     "vite": "^6.0.7"
+  },
+  "overrides": {
+    "three": "$three",
+    "@types/three": "file:vendor/types-three-0.163.10003.tgz"
   }
 }
